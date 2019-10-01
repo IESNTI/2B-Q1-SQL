@@ -1,0 +1,8 @@
+use student;
+CREATE TABLE Localite(
+    NumLoc NUMERIC(3) NOT NULL PRIMARY KEY,
+    CodePostal NUMERIC(4) NOT NULL,
+    Libelle VARCHAR(50) NOT NULL,
+    Pays NUMERIC(4) NOT NULL,
+    FOREIGN KEY (PAYS) REFERENCES Pays(Numero)
+);

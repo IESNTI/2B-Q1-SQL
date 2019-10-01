@@ -1,0 +1,5 @@
+USE student;
+CREATE TABLE Pays(
+    Numero NUMERIC(4) NOT NULL PRIMARY KEY,
+    Nom VARCHAR(30) NOT NULL
+);

@@ -1,4 +1,5 @@
-use student;
+USE student;
+
 CREATE TABLE Localite(
     NumLoc NUMERIC(3) NOT NULL PRIMARY KEY,
     CodePostal NUMERIC(4) NOT NULL,

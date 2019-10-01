@@ -1,4 +1,5 @@
 USE student;
+
 CREATE TABLE Personne(
     NumCarteId NUMERIC(20) NOT NULL PRIMARY KEY,
     NomPrenom VARCHAR(100) NOT NULL,

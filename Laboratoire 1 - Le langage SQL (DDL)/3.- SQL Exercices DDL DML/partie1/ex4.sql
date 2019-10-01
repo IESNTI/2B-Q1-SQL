@@ -1,3 +1,4 @@
 USE student;
 
-ALTER TABLE Personne ADD Caractères VARCHAR(20);
+ALTER TABLE Personne
+ADD Caractères VARCHAR(20);

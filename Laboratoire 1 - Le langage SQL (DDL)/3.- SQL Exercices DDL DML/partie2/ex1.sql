@@ -7,5 +7,7 @@ CREATE TABLE Utilisateur(
     Categorie VARCHAR(20) NOT NULL CHECK (
         Categorie IN ('Etudiant','Professeur','Administrateur')
     ),
-    DateCreation DATE NOT NULL
+    DateCreation DATE NOT NULL,
+    CONSTRAINT Nom_Prenom_Unique
+        UNIQUE(Nom, Prenom)
 );

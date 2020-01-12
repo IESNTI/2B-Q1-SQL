@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotheque>
+    <emprunts>
+        <emprunt>
+            <nom_emprunteur>Adrien</nom_emprunteur>
+            <id_livre>2</id_livre>
+            <date_emprunt>2017-12-02</date_emprunt>
+            <date_retour>2018-01-02</date_retour>
+        </emprunt>
+    </emprunts>
+    <livres>
+        <livre>
+            <id>1</id>
+            <titre>Le petit prince</titre>
+            <auteur>Saint-Exupery</auteur>
+            <date>1943-01-01</date>
+            <prix>15.5</prix>
+            <disponible>true</disponible>
+        </livre>
+        <livre>
+            <id>2</id>
+            <titre>L’étranger</titre>
+            <auteur>Albert Camus</auteur>
+            <date>1942-01-01</date>
+            <prix>12.5</prix>
+            <disponible>false</disponible>
+        </livre>
+    </livres>
+</bibliotheque>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="bibliotheque">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="emprunts">
+                    <xsd:complexType>
+                        <xsd:sequence maxOccurs="10">
+                            <xsd:element name="emprunt">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="nom_emprunteur" type="xsd:string"/>
+                                        <xsd:element name="id_livre" type="xsd:int"/>
+                                        <xsd:element name="date_emprunt" type="xsd:date"/>
+                                        <xsd:element name="date_retour" type="xsd:date"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="livres">
+                    <xsd:complexType>
+                        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xsd:element name="livre">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="id" type="xsd:int"/>
+                                        <xsd:element name="titre" type="xsd:string"/>
+                                        <xsd:element name="auteur" type="xsd:string"/>
+                                        <xsd:element name="date" type="xsd:date"/>
+                                        <xsd:element name="prix" type="xsd:decimal"/>
+                                        <xsd:element name="disponible" type="xsd:boolean"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="langue" type="xsd:string"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

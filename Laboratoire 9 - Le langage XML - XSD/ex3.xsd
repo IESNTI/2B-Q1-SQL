@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="bibliotheque">
+        <xsd:complexType>
+            <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                <xsd:element name="livre">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="id" type="xsd:int"></xsd:element>
+                            <xsd:element name="titre" type="xsd:string"></xsd:element>
+                            <xsd:element name="auteur" type="xsd:string"></xsd:element>
+                            <xsd:element name="date" type="xsd:date"></xsd:element>
+                            <xsd:element name="prix" type="xsd:decimal"></xsd:element>
+                            <xsd:element name="disponible" type="xsd:boolean"></xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="langue" type="xsd:string"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

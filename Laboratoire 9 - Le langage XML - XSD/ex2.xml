@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livre langue="francais">
+    <id>1</id>
+    <titre>Le petit prince</titre>
+    <auteur>Saint-Exupery</auteur>
+    <date>1943-01-01</date>
+    <prix>15.5</prix>
+    <disponible>true</disponible>
+</livre>

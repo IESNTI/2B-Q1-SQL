@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- emprunt -->
+    <xsd:element name="nom_emprunteur" type="xsd:string"/>
+    <xsd:element name="id_livre" type="xsd:int"/>
+    <xsd:element name="date_emprunt" type="xsd:date"/>
+    <xsd:element name="date_retour" type="xsd:date"/>
+
+    <!-- livre -->
+    <xsd:element name="id" type="xsd:int"/>
+    <xsd:element name="titre" type="xsd:string"/>
+    <xsd:element name="auteur" type="xsd:string"/>
+    <xsd:element name="date" type="xsd:date"/>
+    <xsd:element name="prix" type="xsd:decimal"/>
+    <xsd:element name="disponible" type="xsd:boolean"/>
+
+    <!-- bibliotheque -->
+    <xsd:element name="bibliotheque">
+        <xsd:complexType>
+            <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                <xsd:element ref="emprunts" />
+                <xsd:element ref="livres" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
